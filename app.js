@@ -6,8 +6,6 @@ const mainRoute = require("./routes/main")
 const gamesRouter = require("./routes/games")
 const cors = require('./middlewares/cors')
 
-app.use(bodyParser.json(), express.static(path.join(__dirname, 'public')))
-
 app.use(
     cors,
     bodyParser.json(),
@@ -15,8 +13,7 @@ app.use(
     mainRoute,
     gamesRouter
   )
-
-const PORT = process.env.PORT || 3000
+const PORT = 3000
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`)
 })
