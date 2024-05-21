@@ -1,14 +1,21 @@
-const { writeData } = require("../utils/data");
-
 const sendAllGames = (req, res) => {
-  res.send(req.games);
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify(req.gamesArray));
 };
 
-const sendUpdatedGames = (req, res) => {
-  res.send({
-    games: req.games,
-    updated: req.updatedObject
-  });
+const sendGameCreated = (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.end(JSON.stringify(req.game));
 };
 
-module.exports = { sendAllGames, sendUpdatedGames };
+const sendGameById = (req,res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.end(JSON.stringify(req.game));
+}
+
+const sendGameDeleted = (req,res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.end(JSON.stringify(req.game));
+}
+
+module.exports = {sendAllGames, sendGameCreated, sendGameById, sendGameDeleted };
