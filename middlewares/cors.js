@@ -13,7 +13,8 @@ const allowedCors = [
     'https://students-projects.ru',
     'localhost:3000',
     'http://localhost:3000',
-    'localhost:3002'
+    'localhost:3002',
+    'sirdebar.nomoredomainswork.ru'
   ];
 
   module.exports = cors
