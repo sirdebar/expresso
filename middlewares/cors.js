@@ -14,7 +14,7 @@ const allowedCors = [
     'localhost:3000',
     'http://localhost:3000',
     'localhost:3002',
-    'sirdebar.nomoredomainswork.ru'
+    'https://sirdebar.nomoredomainswork.ru'
   ];
 
   module.exports = cors
