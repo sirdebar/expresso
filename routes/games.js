@@ -6,7 +6,7 @@ const { sendGameCreated, sendAllGames, sendGameById, sendGameDeleted } = require
 const { sendGameUpdated } = require('../controllers/categories');
 const { checkAuth } = require('../middlewares/checkAuth');
 
-apiRouter.use('api', gamesRouter)
+// apiRouter.use('api', gamesRouter) dsad
 
 gamesRouter.get('/games', findAllGames, sendAllGames);
 gamesRouter.get('/games/:id', findGameById, sendGameById);
