@@ -17,6 +17,9 @@ gamesRouter.post(
   checkIfCategoriesAvailable,
   checkEmptyFields,
   checkAuth,
+  createGame,
+  sendGameCreated
+
 );
 gamesRouter.put(
   "/games/:id",
@@ -26,6 +29,8 @@ gamesRouter.put(
   checkIfCategoriesAvailable,
   checkEmptyFields,
   checkAuth,
+  updateGame,
+  sendGameUpdated
 );
 
 gamesRouter.delete('/games/:id',checkAuth, deleteGame, sendGameDeleted,);
