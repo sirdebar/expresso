@@ -11,9 +11,9 @@ function cors(req, res, next) {
 const allowedCors = [
     'https://practicum.yandex.ru',
     'https://students-projects.ru',
-    'localhost:3000',
     'http://localhost:3000',
-    'localhost:3002',
+    'http://localhost:3000',
+    'http://localhost:3002',
     'https://sirdebar.nomoredomainswork.ru'
   ];
 
